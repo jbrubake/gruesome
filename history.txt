@@ -1,0 +1,75 @@
+For my own amusement, a history of my own failures at coding...
+
+
+Immediate targets:
+ - shadowcasting for player FOV
+ - slightly better raycasting for enemy light-cones
+ - real AI and pathfinding for enemies, inc fear/anger and target system
+ - full stats system (Speed, Lurk, Magic, Senses)
+ - time system?
+ - more spells/abilities and menus for casting
+ - experience point and levels, with stat-choices on levelling
+ - more achievements
+ - hi score file (including death scores)
+ - detailed config file
+ - better message handling with message loops
+ - screen-scrolling for long dumps (eg at end game)
+ - message buffer
+ - possible change to Python or C++
+
+Distant targets:
+ - OOP?
+ - variety of enemies
+ - advanced enemy spells
+ - advanced player spells
+ - advanced time system
+ - boss enemies with special levels
+ - random water, lava
+ - more dungeon level types (inc classic Rogue?)
+ - enemy traps
+ - status effects (both player and enemy)
+ - castle levels & enemies
+ - sorceror of light and hall of mirrors
+
+
+History:
+-------
+
+21st January - release v0.0.3.  Changes:
+ - reduced grue visibility to 8
+ - gave player starting SP and more SP from kills
+ - lurkkills only count for lit adventurers; they fully regen SP and give triple xp
+ - Added "Sense" ability to detect enemies with 'a', costs 1 SP
+ - Changed ShadowBall to 'z' key, now costs 2 SP
+ - Fiddled with colour system to make it easier to change
+ - Enemies light up walls (no correction for player being on opposite side)
+ - FOV tweaked a little (no real noticable difference though)
+ - Enemy colours represent difficulty, and the worst are only encountered on higher levels
+ - Tweaked kills procedures
+ - Added ShadowWalk ability - freezes time but uses up LP each round
+ - added in-game help screen
+
+
+18th January - Added basic spell - ShadowBall, allows player to blind adventurers so they can then pounce on them.  Makes game slightly easier.  Added additional flavour messages, achievements, and reworked movement function a little.  Released as v0.0.2.
+
+17th January - Ditched the circular FOV for the old line-casting.  Made multiple enemies, increasing with dungeon depth, and allowed them to walk into the grue and be eaten.  Added start/end screens, player name, a few records of play progress, basic achievements and death.  Probably some other little things too...  Released for the first time as v0.0.1!
+
+16th January - Another long hiatus, but now creatures can move randomly without collisions.  Changed line of sight to an extremely simple circular one for speed purposes, but original is still available in code.  Grue can now see beyond walls, and complains when in light.
+
+17th November - back again, this time with real changes.  Created "creatures" - for now just lights.  Emits light around target area.  Allowed light to be in cone with specific facing, and created ones which spin every turn (like a lighthouse).  Need to work on creature array and movement.
+
+25th October - Returned after long hiatus.  Settled on colour scheme - explored dark grey, visible light grey, lit white with grey background.
+
+1st September - Found crt library, and beginning to learn how to use it for proper interfaces.  New Line of Sight Algorithm (better, maybe a little slower).
+
+31st August - CaveExplorer made, allowing player to move a '@' symbol around random maps, traversing stairs, and exploring regions with a fully working Line of Sight algorithm.  Style of maps is dynamically altered to reflect how high you ascend or how deep you plunge.
+
+30th August - Circle drawing complete.  Draws a 1/8th arc using pythogorus and then rotates/reflects to draw whole circle.  Original idea?  Any good compared to standard?  Who cares!
+
+26th August - Line drawing complete.  Follows rules invented by drawing lines on scraps of squared paper.  Similar to Bresenham's?
+
+17th August - Connected dynamic organic cave generator complete!
+
+8th August - Made first cave generator (after a few days playing around).  Unconnected, asked for help on RGRD.
+
+17th July 2008 - Downloaded Free Pascal.  Baffled...  Played with basic tutorial.  Failed at Towers of Hanoi!
